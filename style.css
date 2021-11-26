@@ -164,24 +164,25 @@ html {
 }
 
 .red-square {
-  -webkit-transform: translate(-20%, 120%);
-  transform: translate(-20%, 120%);
+  position: relative;
+  top:85px;
+  left:-10px;
+  
   height: 70px;
   z-index: -1;
 }
 
 .blue-triangle {
-  -webkit-transform: translate(405%, -90%);
-  transform: translate(405%, -90%);
   padding: 0;
   margin: 0;
+  position: relative;
+  top: -80px;
+  left: 380px;
 }
 
 .hero_body {
   max-width: 40ch;
   font-size: 1.25em;
-  -webkit-transform: translate(0, -90%);
-  transform: translate(0, -90%);
 }
 
 .my-name {
@@ -199,7 +200,7 @@ html {
 .hero_left {
   display: -webkit-box;
   display: -ms-flexbox;
-  /* display: flex; */
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -301,16 +302,17 @@ html {
     margin-top: 1em;
     font-size: 0.85em;
     width: 100%;
-    height: auto;
   }
 
   .main-title {
     line-height: 1.25em;
+    position: absolute;
   }
+
   .hero_body {
-    margin: 0 auto;
     font-size: 2em;
-    margin-top: 10em;
+    margin-top: 7em;
+    padding: 0;
     line-height: 1.3em;
   }
   .logo {
@@ -326,14 +328,12 @@ html {
   }
   .red-square {
     height: 40px;
-    transform: translate(0%, 135%);
+    top:55px;
+    left:0px;
   }
   .blue-triangle {
     height: 40px;
-    transform: translate(550%, -100%);
-  }
-
-  .abstract-shapes {
-    display: none;
+    top: 180px;
+    left: 220px;
   }
 }
