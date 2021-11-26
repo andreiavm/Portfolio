@@ -221,11 +221,6 @@ html {
   flex-direction: column;
 }
 
-.hero_header {
-  -webkit-transform: translate(0, -10%);
-  transform: translate(0, -10%);
-}
-
 .abstract-shapes {
   height: 80%;
   -ms-flex-item-align: end;
