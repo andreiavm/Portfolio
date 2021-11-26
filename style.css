@@ -206,8 +206,8 @@ html {
   flex-direction: column;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  justify-content: flex-start;
   width: 80%;
+  height: 100%;
 }
 
 .hero_right {
@@ -286,7 +286,6 @@ html {
 @media only screen and (max-width: 600px) {
   .header {
     font-size: 1em;
-
   }
   .container {
     width: 80%;
@@ -299,10 +298,10 @@ html {
   }
 
   .hero_left {
-    margin-top: 3em;
+    margin-top: 1em;
     font-size: 0.85em;
     width: 100%;
-    justify-content: center;
+    height: auto;
   }
 
   .main-title {
@@ -318,7 +317,6 @@ html {
     justify-content: flex-start;
   }
   .semi {
-    /* display: none; */
     height: 40px;
     -webkit-transform: translate(0%, 5%);
     transform: translate(-10%, 5%);
@@ -328,10 +326,14 @@ html {
   }
   .red-square {
     height: 40px;
-    transform: translate(-20%, 130%);
+    transform: translate(0%, 135%);
   }
   .blue-triangle {
     height: 40px;
-    transform: translate(570%, -100%);
+    transform: translate(550%, -100%);
+  }
+
+  .abstract-shapes {
+    display: none;
   }
 }
