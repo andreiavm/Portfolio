@@ -192,18 +192,6 @@ html {
   cursor: pointer;
 }
 
-.my-name::before {
-  content: "";
-  background-image: url(/graphics/andrei.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: none;
-  position: absolute;
-  bottom: 100px;
-  width: 250px;
-  height: 250px;
-}
-
 .my-name:hover:before {
   display: block;
 }
@@ -211,7 +199,7 @@ html {
 .hero_left {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  /* display: flex; */
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -270,8 +258,8 @@ html {
   display: none;
   position: absolute;
   bottom: 100px;
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
 }
 
 @media only screen and (min-width: 2000px) {
@@ -289,10 +277,16 @@ html {
     transform: translate(105%, -600%);
     z-index: 1;
   }
+
+  .my-name::before {
+    width: 350px;
+    height: 30px;
+  }
 }
 @media only screen and (max-width: 600px) {
-  .logo {
-    width: 100%;
+  .header {
+    font-size: 1em;
+
   }
   .container {
     width: 80%;
@@ -305,31 +299,39 @@ html {
   }
 
   .hero_left {
-    font-size: 0.65em;
+    margin-top: 3em;
+    font-size: 0.85em;
+    width: 100%;
+    justify-content: center;
   }
 
+  .main-title {
+    line-height: 1.25em;
+  }
   .hero_body {
     margin: 0 auto;
-    font-size: 1.7em;
-    margin-top: 6em;
+    font-size: 2em;
+    margin-top: 10em;
+    line-height: 1.3em;
   }
   .logo {
     justify-content: flex-start;
   }
   .semi {
-    height: 50px;
+    /* display: none; */
+    height: 40px;
     -webkit-transform: translate(0%, 5%);
-    transform: translate(0%, 5%);
+    transform: translate(-10%, 5%);
   }
   .main-title {
     font-size: 3.5em;
   }
   .red-square {
     height: 40px;
-    transform: translate(-20%, 110%);
+    transform: translate(-20%, 130%);
   }
   .blue-triangle {
     height: 40px;
-    transform: translate(430%, -90%);
+    transform: translate(570%, -100%);
   }
 }
