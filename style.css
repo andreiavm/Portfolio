@@ -219,6 +219,7 @@ html {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  width: 80%;
 }
 
 .hero_right {
@@ -237,11 +238,9 @@ html {
 }
 
 .abstract-shapes {
-  height: 100%;
+  height: 80%;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  -webkit-transform: translate(20%);
-  transform: translate(20%);
   z-index: 2;
 }
 
@@ -252,15 +251,15 @@ html {
 }
 
 .abstract-shapes {
-  width: 70%;
-  -webkit-transform: translate(50%, 5%);
-  transform: translate(50%, 5%);
+  width: 100%;
+  -webkit-transform: translate(15%, 0%);
+  transform: translate(15%, 0%);
 }
 
 .yellow-rect {
   width: 70%;
   -webkit-transform: translate(60%, -500%);
-  transform: translate(134%, -400%);
+  transform: translate(100%, -600%);
 }
 
 .my-name::before {
@@ -278,6 +277,12 @@ html {
 @media only screen and (min-width: 2000px) {
   .container {
     width: 75%;
+  }
+
+  .abstract-shapes {
+    width: 100%;
+    -webkit-transform: translate(20%, 0%);
+    transform: translate(20%, 0%);
   }
 }
 @media only screen and (max-width: 700px) {
