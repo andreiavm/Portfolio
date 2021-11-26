@@ -165,24 +165,22 @@ html {
 
 .red-square {
   position: relative;
-  top:85px;
-  left:-10px;
-  
+  top: 85px;
+  left: -10px;
+
   height: 70px;
   z-index: -1;
 }
 
 .blue-triangle {
-  padding: 0;
-  margin: 0;
   position: relative;
   top: -80px;
   left: 380px;
 }
-
 .hero_body {
   max-width: 40ch;
-  font-size: 1.25em;
+  font-size: 1.35em;
+  transform: translate(0%, -30%);
 }
 
 .my-name {
@@ -210,7 +208,6 @@ html {
   width: 80%;
   height: 100%;
 }
-
 .hero_right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -219,8 +216,8 @@ html {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-top: 4em;
 }
-
 .abstract-shapes {
   height: 80%;
   -ms-flex-item-align: end;
@@ -278,6 +275,10 @@ html {
     width: 350px;
     height: 30px;
   }
+
+  .hero_right {
+    margin-top: 10em;
+  }
 }
 @media only screen and (max-width: 600px) {
   .header {
@@ -294,7 +295,6 @@ html {
   }
 
   .hero_left {
-    margin-top: 1em;
     font-size: 0.85em;
     width: 100%;
   }
@@ -303,12 +303,12 @@ html {
     line-height: 1.25em;
     position: absolute;
   }
-
   .hero_body {
     font-size: 2em;
     margin-top: 7em;
     padding: 0;
     line-height: 1.3em;
+    transform: translate(0%, 0%);
   }
   .logo {
     justify-content: flex-start;
@@ -323,8 +323,8 @@ html {
   }
   .red-square {
     height: 40px;
-    top:55px;
-    left:0px;
+    top: 55px;
+    left: 0px;
   }
   .blue-triangle {
     height: 40px;
