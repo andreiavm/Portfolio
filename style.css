@@ -61,7 +61,7 @@ html {
   background-color: #0f0f0f;
   color: #fcfcfc;
   max-width: 100wh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container {
