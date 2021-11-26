@@ -246,7 +246,7 @@ html {
 
 .yellow-rect {
   -webkit-transform: translate(60%, -500%);
-  transform: translate(60%, -500%);
+  transform: translate(60%, -5000%);
   z-index: 1;
 }
 
@@ -259,7 +259,7 @@ html {
 .yellow-rect {
   width: 70%;
   -webkit-transform: translate(60%, -500%);
-  transform: translate(100%, -600%);
+  transform: translate(100%, -700%);
 }
 
 .my-name::before {
@@ -283,6 +283,11 @@ html {
     width: 100%;
     -webkit-transform: translate(20%, 0%);
     transform: translate(20%, 0%);
+  }
+  .yellow-rect {
+    -webkit-transform: translate(105%, -600%);
+    transform: translate(105%, -600%);
+    z-index: 1;
   }
 }
 @media only screen and (max-width: 700px) {
