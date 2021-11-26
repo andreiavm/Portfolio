@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">
+      <header class="header" id="header"> 
         <div class="logo">
           <a href="#">
             <h2 class="name">
@@ -35,10 +35,10 @@
       </header>
       <main>
         <section class="hero">
-          <div class="hero_left">
+          <div class="hero_left" id="hero-left">
             <div class="hero_header">
               <img class="red-square" src="/graphics/red-square.png">
-              <h1 class="main-title">
+              <h1 class="main-title" id="main-title">
                   designer<br>
                   developer<br>
                   digital artisan
@@ -48,12 +48,17 @@
             <p class="hero_body"><span class="my-name">Andrei</span> is a designer based in Rotterdam, focusing on crafting beautiful digital experiences by combining interaction psychology with a pixel-perfect approach to aesthetics.</p>
           </div>
           <div class="hero_right">
-            <img src="/graphics/abstract-render.png" alt="abstract-shapes" class="abstract-shapes">
-            <img src="/graphics/yellow-rect.png" alt="yellow-rectangle" class="yellow-rect">
+            <img src="/graphics/abstract-render.png" alt="abstract-shapes" class="abstract-shapes" id="abstract-shapes">
+            <img src="/graphics/yellow-rect.png" alt="yellow-rectangle" class="yellow-rect" id="yellow-rect">
           </div>
         </section>
       </main>
       </nav>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
