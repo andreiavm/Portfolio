@@ -167,7 +167,6 @@ html {
   position: relative;
   top: 85px;
   left: -10px;
-
   height: 70px;
   z-index: -1;
 }
@@ -176,6 +175,7 @@ html {
   position: relative;
   top: -80px;
   left: 380px;
+  z-index: -1;
 }
 .hero_body {
   max-width: 40ch;
