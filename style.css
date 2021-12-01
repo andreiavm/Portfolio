@@ -273,7 +273,7 @@ html {
 
   .my-name::before {
     width: 350px;
-    height: 30px;
+    height: 350px;
   }
 
   .hero_right {
