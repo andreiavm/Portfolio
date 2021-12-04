@@ -16,6 +16,7 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -60,8 +61,8 @@ img {
 html {
   background-color: #0f0f0f;
   color: #fcfcfc;
-  max-width: 100wh;
   overflow-x: hidden;
+  height: auto;
 }
 
 .container {
@@ -131,22 +132,23 @@ html {
   text-underline-offset: 1px;
 }
 
-.work:hover {
+.work-nav:hover {
   -webkit-text-decoration-color: #002b7f;
   text-decoration-color: #002b7f;
 }
 
-.about:hover {
+.about-nav:hover {
   -webkit-text-decoration-color: #fcd117;
   text-decoration-color: #fcd117;
 }
 
-.contact:hover {
+.contact-nav:hover {
   -webkit-text-decoration-color: #ce1126;
   text-decoration-color: #ce1126;
 }
 
 .hero {
+  margin-top: 2.5em;
   font-family: Roobert;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,26 +163,76 @@ html {
   line-height: 1.15em;
   position: relative;
   z-index: 0;
+  margin-bottom: 0.5em;
 }
 
-.red-square {
+button {
+  margin-top: 2em;
+  align-self: flex-start;
+  border: none;
+  color: white;
+  padding: 0.75rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25em;
+  font-weight: 900;
+  border: #002b7f 2px solid;
+}
+
+#about-button {
+  background-color: #002b7f;
+}
+
+#about-button:hover {
+  border: white 2px solid;
+}
+
+#about-button::before {
+  content: "";
+  background-image: url(/graphics/about-icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
   position: relative;
-  top: 85px;
+  height: 50px;
+  width: 50px;
+  top: 0px;
+  left: 0px;
+}
+
+#span-designer::before {
+  content: "";
+  background-image: url(/graphics/red-square.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+  top: 10px;
   left: -10px;
+  width: 70px;
   height: 70px;
+}
+#span-digital-artisan::after {
+  content: "  ";
+  background-image: url(/graphics/blue-triangle.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
   z-index: -1;
+  top: 10px;
+  left: 380px;
+  width: 95px;
+  height: 95px;
 }
 
-.blue-triangle {
+.main-title > span {
+  display: block;
   position: relative;
-  top: -80px;
-  left: 380px;
-  z-index: -1;
 }
+
 .hero_body {
   max-width: 40ch;
   font-size: 1.35em;
-  transform: translate(0%, -30%);
 }
 
 .my-name {
@@ -216,7 +268,7 @@ html {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-top: 4em;
+  margin-top: 2em;
 }
 .abstract-shapes {
   height: 80%;
@@ -247,14 +299,79 @@ html {
   content: "";
   background-image: url(/graphics/andrei.webp);
   background-size: cover;
+  z-index: 2;
   background-repeat: no-repeat;
   display: none;
   position: absolute;
-  bottom: 150px;
+  top: 115px;
   width: 300px;
   height: 300px;
 }
 
+.work {
+  font-family: Roobert;
+  margin-top: 6em;
+}
+
+.work h1 {
+  font-size: 3em;
+  margin-bottom: 0.25em;
+}
+
+.portfolio-wrapper {
+  display: grid;
+}
+
+.work-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-wrapper_right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5em;
+}
+
+.work-wrapper + .work-wrapper {
+  margin-top: 2em;
+}
+
+.about {
+  font-family: Roobert;
+  margin-top: 6em;
+}
+
+.about_left {
+  font-family: Roobert;
+  max-width: 55ch;
+}
+
+.about h1 {
+  font-size: 3em;
+  margin-bottom: 0.25em;
+}
+
+.about-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_left-body > span {
+  margin-top: 0.75em;
+  display: block;
+}
+.contact {
+  font-family: Roobert;
+  margin-top: 6em;
+}
+
+.contact h1 {
+  font-size: 3em;
+  margin-bottom: 0.25em;
+}
+
+/* media queries */
 @media only screen and (min-width: 2000px) {
   .container {
     width: 75%;
@@ -273,7 +390,7 @@ html {
 
   .my-name::before {
     width: 350px;
-    height: 350px;
+    height: 30px;
   }
 
   .hero_right {
@@ -297,18 +414,17 @@ html {
   .hero_left {
     font-size: 0.85em;
     width: 100%;
+    flex-direction: column;
   }
 
   .main-title {
+    margin-top: 1em;
     line-height: 1.25em;
-    position: absolute;
+    font-size: 3.5em;
   }
   .hero_body {
     font-size: 2em;
-    margin-top: 7em;
-    padding: 0;
     line-height: 1.3em;
-    transform: translate(0%, 0%);
   }
   .logo {
     justify-content: flex-start;
@@ -318,9 +434,7 @@ html {
     -webkit-transform: translate(0%, 5%);
     transform: translate(-10%, 5%);
   }
-  .main-title {
-    font-size: 3.5em;
-  }
+
   .red-square {
     height: 40px;
     top: 55px;
@@ -330,5 +444,28 @@ html {
     height: 40px;
     top: 180px;
     left: 220px;
+  }
+  #span-designer::before {
+    width: 40px;
+    height: 40px;
+    left: 0px;
+  }
+  #span-digital-artisan::after {
+    width: 50px;
+    height: 50px;
+    left: 260px;
+  }
+  .work {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .work-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .work-wrapper_body {
+    display: none;
   }
 }
