@@ -535,6 +535,21 @@ button {
   .about_right {
     margin-top: 2em;
   }
+  .about_left {
+    width: 80%;
+  }
+  .about_left-body {
+    font-size: 2em;
+  }
+
+  .about_left-body > span + span {
+    margin-top: 1.5em;
+  }
+
+  .about_right {
+    width: 100%;
+    margin-top: 5em;
+  }
 }
 
 @media only screen and (max-width: 536px){
