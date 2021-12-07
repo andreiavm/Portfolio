@@ -365,7 +365,6 @@ button {
   width: 35%;
 }
 
-
 .about h1 {
   font-size: 3em;
   margin-bottom: 0.25em;
@@ -388,6 +387,10 @@ button {
 .contact h1 {
   font-size: 3em;
   margin-bottom: 0.25em;
+}
+
+.work-wrapper > img {
+  /* max-width: 500px; */
 }
 
 /* media queries */
