@@ -396,9 +396,8 @@ button {
 /* media queries */
 @media only screen and (min-width: 2000px) {
   .container {
-    width: 75%;
+    width: 50%;
   }
-
   .abstract-shapes {
     width: 100%;
     -webkit-transform: translate(20%, 0%);
@@ -417,7 +416,7 @@ button {
   }
 
   .hero_right {
-    margin-top: 10em;
+    margin-top: 4em;
   }
 }
 @media only screen and (max-width: 600px) {
