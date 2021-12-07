@@ -1,569 +1,108 @@
-/* Font Styles */
-
-@font-face {
-  font-family: Roobert;
-  src: url(/fonts/Roobert/RoobertTRIAL-Medium.otf);
-}
-
-@font-face {
-  font-family: Plain;
-  src: url(/fonts/Plain/Plain\ Medium.otf);
-}
-
-/* Css Reset */
-
-html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: 16px;
-  scroll-behavior: smooth;
-}
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ol,
-ul {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-}
-
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Style */
-
-html {
-  background-color: #0f0f0f;
-  color: #fcfcfc;
-  overflow-x: hidden;
-  height: auto;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  font-family: Plain;
-  font-size: 1.25em;
-  margin-top: 1em;
-}
-
-.logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.name {
-  padding-right: 0.5em;
-}
-
-.semi {
-  height: 70px;
-  -webkit-transform: translate(5%, 5%);
-  transform: translate(5%, 5%);
-}
-
-.navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.navigation_list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.navigation_link + .navigation_link {
-  margin-left: 3em;
-}
-
-.navigation_list-item:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 1px;
-}
-
-.work-nav:hover {
-  -webkit-text-decoration-color: #002b7f;
-  text-decoration-color: #002b7f;
-}
-
-.about-nav:hover {
-  -webkit-text-decoration-color: #fcd117;
-  text-decoration-color: #fcd117;
-}
-
-.contact-nav:hover {
-  -webkit-text-decoration-color: #ce1126;
-  text-decoration-color: #ce1126;
-}
-
-.hero {
-  margin-top: 2.5em;
-  font-family: Roobert;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.main-title {
-  font-size: 4.5em;
-  line-height: 1.15em;
-  position: relative;
-  z-index: 0;
-  margin-bottom: 0.5em;
-}
-
-button {
-  margin-top: 2em;
-  align-self: flex-start;
-  border: none;
-  color: white;
-  padding: 0.75rem 2rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.25em;
-  font-weight: 900;
-  border: #002b7f 2px solid;
-}
-
-#about-button {
-  background-color: #002b7f;
-}
-
-#about-button:hover {
-  border: white 2px solid;
-}
-
-#about-button::before {
-  content: "";
-  background-image: url(/graphics/about-icon.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: relative;
-  height: 50px;
-  width: 50px;
-  top: 0px;
-  left: 0px;
-}
-
-#span-designer::before {
-  content: "";
-  background-image: url(/graphics/red-square.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  z-index: -1;
-  top: 10px;
-  left: -10px;
-  width: 70px;
-  height: 70px;
-}
-#span-digital-artisan::after {
-  content: "  ";
-  background-image: url(/graphics/blue-triangle.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  z-index: -1;
-  top: 10px;
-  left: 380px;
-  width: 95px;
-  height: 95px;
-}
-
-.main-title > span {
-  display: block;
-  position: relative;
-}
-
-.hero_body {
-  max-width: 40ch;
-  font-size: 1.5em;
-}
-
-.my-name {
-  text-decoration: underline;
-}
-
-.my-name:hover {
-  cursor: pointer;
-}
-
-.my-name:hover:before {
-  display: block;
-}
-
-.hero_left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  width: 80%;
-  height: 100%;
-}
-.hero_right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-top: 2em;
-}
-.abstract-shapes {
-  height: 80%;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-  z-index: 2;
-}
-
-.yellow-rect {
-  -webkit-transform: translate(60%, -500%);
-  transform: translate(60%, -5000%);
-  z-index: 1;
-}
-
-.abstract-shapes {
-  width: 100%;
-  -webkit-transform: translate(15%, 0%);
-  transform: translate(15%, 0%);
-}
-
-.yellow-rect {
-  width: 70%;
-  -webkit-transform: translate(60%, -500%);
-  transform: translate(100%, -700%);
-}
-
-.my-name::before {
-  content: "";
-  background-image: url(/graphics/andrei-placeholder.jpg);
-  background-size: cover;
-  z-index: 2;
-  background-repeat: no-repeat;
-  display: none;
-  position: absolute;
-  top: -20px;
-  width: 300px;
-  height: 300px;
-}
-
-.work {
-  font-family: Roobert;
-  margin-top: 6em;
-}
-
-.work h1 {
-  font-size: 3em;
-  margin-bottom: 0.25em;
-}
-
-.portfolio-wrapper {
-  display: grid;
-}
-
-.work-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-.work-wrapper_right {
-  display: flex;
-  flex-direction: column;
-  margin-left: 5em;
-  width: 50%;
-}
-
-.work-wrapper_header {
-  font-size: 2em;
-}
-.work-wrapper_body {
-  font-size: 1.15em;
-  margin-top: 0.75em;
-}
-.work_image {
-  width: 40%;
-}
-
-.work-wrapper + .work-wrapper {
-  margin-top: 2em;
-}
-
-.about {
-  font-family: Roobert;
-  margin-top: 6em;
-}
-
-.about_left {
-  font-family: Roobert;
-  max-width: 55ch;
-  width: 50%;
-  font-size: 1.15em;
-}
-
-.about_right {
-  width: 35%;
-}
-
-
-.about h1 {
-  font-size: 3em;
-  margin-bottom: 0.25em;
-}
-
-.about-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-.about_left-body > span + span {
-  margin-top: 2em;
-  display: block;
-}
-.contact {
-  font-family: Roobert;
-  margin-top: 6em;
-}
-
-.contact h1 {
-  font-size: 3em;
-  margin-bottom: 0.25em;
-}
-
-/* media queries */
-@media only screen and (min-width: 2000px) {
-  .container {
-    width: 75%;
-  }
-
-  .abstract-shapes {
-    width: 100%;
-    -webkit-transform: translate(20%, 0%);
-    transform: translate(20%, 0%);
-  }
-  .yellow-rect {
-    -webkit-transform: translate(105%, -600%);
-    transform: translate(105%, -600%);
-    z-index: 1;
-  }
-
-  .my-name::before {
-    width: 350px;
-    height: 350px;
-    top: -100px;
-  }
-
-  .hero_right {
-    margin-top: 10em;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .header {
-    font-size: 1em;
-  }
-  .container {
-    width: 80%;
-  }
-  .navigation {
-    display: none;
-  }
-  .hero_right {
-    display: none;
-  }
-
-  .hero_left {
-    font-size: 2 em;
-    width: 100%;
-    flex-direction: column;
-  }
-  .main-title {
-    margin-top: 0em;
-    line-height: 1.25em;
-    font-size: 3.5em;
-  }
-  .hero_body {
-    font-size: 2.5em;
-    line-height: 1.3em;
-  }
-  .logo {
-    justify-content: flex-start;
-  }
-  .semi {
-    height: 40px;
-    -webkit-transform: translate(0%, 5%);
-    transform: translate(-10%, 5%);
-  }
-
-  #span-designer::before {
-    width: 60px;
-    height: 60px;
-  }
-  #span-digital-artisan::after {
-    width: 60px;
-    height: 60px;
-    left: 70px;
-    top: 90px;
-  }
-  .work {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .work-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .work-wrapper_body {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 1250px) {
-  .main-title {
-    font-size: 4.5em;
-  }
-  #span-designer::before {
-    width: 70px;
-    height: 70px;
-    left: -10px;
-    top: 5px;
-  }
-
-  #span-digital-artisan::after {
-    width: 80px;
-    height: 80px;
-    left: 170px;
-    top: 100px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .semi {
-    height: 50px;
-  }
-  .header {
-    font-size: 1em;
-  }
-  .hero_right {
-    display: none;
-  }
-  #span-designer::before {
-    width: 80px;
-    height: 80px;
-    left: -10px;
-    top: 5px;
-  }
-
-  #span-digital-artisan::after {
-    width: 80px;
-    height: 80px;
-    left: 400px;
-    top: 20px;
-  }
-
-  .about-wrapper {
-    flex-direction: column;
-  }
-  .work_image {
-    width: 100%;
-  }
-  .work-wrapper_right {
-    display: none;
-  }
-
-  .about_right {
-    margin-top: 2em;
-  }
-  .about_left {
-    width: 80%;
-  }
-  .about_left-body {
-    font-size: 2em;
-  }
-
-  .about_left-body > span + span {
-    margin-top: 1.5em;
-  }
-
-  .about_right {
-    width: 100%;
-    margin-top: 5em;
-  }
-}
-
-@media only screen and (max-width: 536px) {
-  #span-designer::before {
-    width: 70px;
-    height: 70px;
-    left: 0px;
-    top: 15px;
-  }
-
-  #span-digital-artisan::after {
-    width: 80px;
-    height: 80px;
-    left: 180px;
-    top: 105px;
-  }
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="icon" href="/graphics/icon.ico" />
+    <title>Andrei Avram | Portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header" id="header"> 
+        <div class="logo">
+          <a href="#">
+            <h2 class="name">
+              andrei avram
+            </h2>
+          </a>
+          <img src="/graphics/yellow-semi.png" alt="yellow semi-circle" class="semi">
+        </div>
+        <nav class="navigation">
+          <ul class="navigation_list">
+            <a class="navigation_link" href="#work-header">
+              <li class="navigation_list-item work-nav">work</li>
+            </a>
+            <a class="navigation_link" href="#about-header">
+              <li class="navigation_list-item about-nav">about</li>
+            </a>
+            <a class="navigation_link" href="#contact-header">
+              <li class="navigation_list-item contact-nav">contact</li>
+            </a>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="hero">
+          <div class="hero_left" id="hero-left">
+            <div class="hero_header">
+              <h1 class="main-title" id="main-title"><span id="span-designer">designer</span><span>developer</span><span id="span-digital-artisan">digital artisan</span></h1>
+            </div>
+            <p class="hero_body"><span class="my-name">Andrei</span> is a designer based in Rotterdam, focusing on crafting beautiful digital experiences by combining interaction psychology with a pixel-perfect approach to aesthetics.</p>
+            <div class="hero_buttons">
+              <!-- <a href="#about-header"><button id="about-button">ABOUT</button></a> -->
+              <!-- <a href="#work-header"><button id="work-button">WORK</button></a> -->
+            </div>
+          </div>
+          <div class="hero_right">
+            <img src="/graphics/abstract-render.png" alt="abstract-shapes" class="abstract-shapes" id="abstract-shapes">
+            <img src="/graphics/yellow-rect.png" alt="yellow-rectangle" class="yellow-rect" id="yellow-rect">
+          </div>
+        </section>
+        <section class="work">
+          <h1 id="work-header">Work</h1>
+          <div class="portfolio-wrapper">
+            <div class="work-wrapper">
+              <img src="/graphics/rotterdam.jpg" alt="" class="work_image" id="work_image-1">
+              <div class="work-wrapper_right" id="work-wrapper_right-1">
+                <h2 class="work-wrapper_header">
+                  Lorem Ipsum
+                </h2>
+                <p class="work-wrapper_body" id="work_body-1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquid fugiat error voluptatibus, recusandae distinctio voluptate delectus fugit explicabo nisi vel eligendi nam iure, reprehenderit dolorem harum ipsa eos tempora.
+                  Cumque, ut. Deserunt nisi nihil voluptate laudantium, dolores quaerat amet provident quas aperiam consectetur numquam unde. Sit expedita provident doloribus enim, reprehenderit cumque velit vitae inventore facere voluptas quas unde.
+                </p>
+              </div>
+            </div>
+            <div class="work-wrapper">
+              <img src="/graphics/ceausescu.jpg" alt="" class="work_image" id="work_image-2">
+              <div class="work-wrapper_right" id="work-wrapper_right-2">
+                <h2 class="work-wrapper_header">
+                  Lorem Ipsum
+                </h2>
+                <p class="work-wrapper_body" id="work_body-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquid fugiat error voluptatibus, recusandae distinctio voluptate delectus fugit explicabo nisi vel eligendi nam iure, reprehenderit dolorem harum ipsa eos tempora.
+                  Cumque, ut. Deserunt nisi nihil voluptate laudantium, dolores quaerat amet provident quas aperiam consectetur numquam unde. Sit expedita provident doloribus enim, reprehenderit cumque velit vitae inventore facere voluptas quas unde.
+                </p>
+              </div>
+            </div>
+          </div>
+          </section>
+          <section class="about">
+            <h1 id="about-header">About</h1>
+            <div class="about-wrapper">
+              <div class="about_left">
+                <p class="about_left-body"><span>Andrei is currently a student at The Hague University of Applied Sciences, studying user experience design, and he’s interested in pursuing a career as a UX engineer, being responsible for research, ideation, design, development, and implementation.</span><span>
+              Taking inspiration from the Bauhaus school and international typography, Andrei has a modern approach to design, aiming for simplicity and functionality.</span><span>He is proficient in wireframing, prototyping, coding, colour theory, and design principles, and is currently developing his skills in user research, react js, and motion graphics.
+                </p>
+              </div>
+            
+              <div class="about_right">
+                <img src="/graphics/hortus-botanicus.JPG">
+            </div>
+
+        </section>
+        <section class="contact">
+          <h1 id="contact-header">Contact</h1>
+        </section>
+      </main>
+      </nav>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
