@@ -297,7 +297,7 @@ button {
 
 .my-name::before {
   content: "";
-  background-image: url(/graphics/andrei.webp);
+  background-image: url(/graphics/andrei-placeholder.jpg);
   background-size: cover;
   z-index: 2;
   background-repeat: no-repeat;
