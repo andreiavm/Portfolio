@@ -479,6 +479,10 @@ button {
   .work-wrapper_body {
     display: none;
   }
+
+  .about {
+    margin-top: 3em;
+  }
 }
 
 @media only screen and (max-width: 1250px) {
@@ -517,6 +521,11 @@ button {
   .hero_right {
     display: none;
   }
+
+  .hero_body {
+    font-size: 2em;
+    margin-top: 0.75em;
+  }
   #span-designer::before {
     width: 80px;
     height: 80px;
@@ -531,14 +540,28 @@ button {
     top: 20px;
   }
 
+  .work {
+    margin-top: 3em;
+  }
+
   .about-wrapper {
     flex-direction: column;
   }
   .work_image {
     width: 100%;
   }
+
   .work-wrapper_right {
+    width: 100%;
+    margin-left: 0em;
+  }
+
+  .work-wrapper_body {
     display: none;
+  }
+
+  .work-wrapper_header {
+    display: inline-block;
   }
 
   .about_right {
@@ -548,7 +571,7 @@ button {
     width: 80%;
   }
   .about_left-body {
-    font-size: 2em;
+    font-size: 1em;
   }
 
   .about_left-body > span + span {
