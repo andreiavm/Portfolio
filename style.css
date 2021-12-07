@@ -303,7 +303,7 @@ button {
   background-repeat: no-repeat;
   display: none;
   position: absolute;
-  top: 115px;
+  top: -20px;
   width: 300px;
   height: 300px;
 }
@@ -325,12 +325,25 @@ button {
 .work-wrapper {
   display: flex;
   justify-content: space-between;
+
 }
 
 .work-wrapper_right {
   display: flex;
   flex-direction: column;
   margin-left: 5em;
+  width: 50%;
+}
+
+.work-wrapper_header {
+  font-size: 2em;
+}
+.work-wrapper_body {
+  font-size: 1.25em;
+  margin-top:0.75em;
+}
+.work_image {
+  width: 40%;
 }
 
 .work-wrapper + .work-wrapper {
@@ -345,6 +358,12 @@ button {
 .about_left {
   font-family: Roobert;
   max-width: 55ch;
+  width: 50%;
+  font-size:1.15em;
+}
+
+.about_right {
+  width: 40%;
 }
 
 .about h1 {
@@ -390,7 +409,8 @@ button {
 
   .my-name::before {
     width: 350px;
-    height: 30px;
+    height: 350px;
+    top: -100px;
   }
 
   .hero_right {
@@ -412,18 +432,17 @@ button {
   }
 
   .hero_left {
-    font-size: 0.85em;
+    font-size: 2 em;
     width: 100%;
     flex-direction: column;
   }
-
   .main-title {
-    margin-top: 1em;
+    margin-top: 0em;
     line-height: 1.25em;
     font-size: 3.5em;
   }
   .hero_body {
-    font-size: 2em;
+    font-size: 2.5em;
     line-height: 1.3em;
   }
   .logo {
@@ -435,25 +454,15 @@ button {
     transform: translate(-10%, 5%);
   }
 
-  .red-square {
-    height: 40px;
-    top: 55px;
-    left: 0px;
-  }
-  .blue-triangle {
-    height: 40px;
-    top: 180px;
-    left: 220px;
-  }
   #span-designer::before {
-    width: 40px;
-    height: 40px;
-    left: 0px;
+    width: 60px;
+    height: 60px;
   }
   #span-digital-artisan::after {
-    width: 50px;
-    height: 50px;
-    left: 260px;
+    width: 60px;
+    height: 60px;
+    left: 70px;
+    top: 90px;
   }
   .work {
     display: flex;
@@ -468,4 +477,78 @@ button {
   .work-wrapper_body {
     display: none;
   }
+}
+
+@media only screen and (max-width: 1250px) {
+  .main-title {
+    font-size: 4.5em;
+  }
+  #span-designer::before {
+    width: 70px;
+    height: 70px;
+    left: -10px;
+    top: 5px;
+  }
+
+  #span-digital-artisan::after {
+    width: 80px;
+    height: 80px;
+    left: 170px;
+    top: 100px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .semi {
+    height: 50px;
+  }
+  .header {
+    font-size: 1em;
+  }
+  .hero_right {
+    display: none;
+  }
+  #span-designer::before {
+    width: 80px;
+    height: 80px;
+    left: -10px;
+    top: 5px;
+  }
+
+  #span-digital-artisan::after {
+    width: 80px;
+    height: 80px;
+    left: 400px;
+    top: 20px;
+  }
+
+  .about-wrapper {
+    flex-direction: column;
+  }
+  .work_image {
+    width: 100%;
+  }
+  .work-wrapper_right {
+    display: none;
+  }
+
+  .about_right {
+    margin-top: 2em;
+  }
+}
+
+@media only screen and (max-width: 536px){
+  #span-designer::before {
+    width: 70px;
+    height: 70px;
+    left: 0px;
+    top: 15px;
+  }
+
+    #span-digital-artisan::after {
+    width: 80px;
+    height: 80px;
+    left: 180px;
+    top: 110px;
+} 
 }
