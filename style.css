@@ -334,7 +334,6 @@ button {
 .work-wrapper_right {
   display: flex;
   flex-direction: column;
-  margin-left: 5em;
   width: 50%;
 }
 
@@ -363,7 +362,7 @@ button {
 }
 
 .about_right {
-  width: 35%;
+  width: 40%;
 }
 
 .about h1 {
@@ -422,6 +421,7 @@ button {
 
   .hero_right {
     margin-top: 4em;
+    margin-right: 1em;
   }
 }
 @media only screen and (max-width: 600px) {
