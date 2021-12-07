@@ -401,7 +401,7 @@ button {
 /* media queries */
 @media only screen and (min-width: 2000px) {
   .container {
-    width: 50%;
+    width: 55%;
   }
   .abstract-shapes {
     width: 100%;
