@@ -297,7 +297,7 @@ button {
 
 .my-name::before {
   content: "";
-  background-image: url(/graphics/andrei.jpg);
+  background-image: url(/graphics/boss.jpg);
   background-size: cover;
   z-index: 2;
   background-repeat: no-repeat;
@@ -541,7 +541,6 @@ button {
     margin-top: 0.75em;
   }
 
-
   #span-designer::before {
     width: 80px;
     height: 80px;
@@ -603,11 +602,10 @@ button {
     margin-top: 5em;
   }
 
-    .about_right-image {
+  .about_right-image {
     min-width: 100%;
     margin-top: -1em;
   }
-
 }
 
 @media only screen and (max-width: 536px) {
@@ -645,4 +643,11 @@ button {
     left: 185px;
     top: 95px;
   }
+}
+
+/* toggle class */
+
+.dark-mode {
+  background-color: #ebdcbd;
+  color: #000000;
 }
