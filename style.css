@@ -82,7 +82,8 @@ html {
   justify-content: space-between;
   font-family: Plain;
   font-size: 1.25em;
-  margin-top: 1em;
+  padding: 0.5em 0;
+  /* background-color: red; */
 }
 
 .logo {
@@ -650,4 +651,29 @@ button {
 .dark-mode {
   background-color: #ebdcbd;
   color: #000000;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  position: sticky;
+  font-family: Plain;
+  background-color: #002b7f;
+  color: white;
+  padding: 1em 0;
+}
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_right {
+  display: flex;
+}
+.footer_right > a + a {
+  margin-left: 2em;
+}
+.footer_right > a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 1px;
 }
