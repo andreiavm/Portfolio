@@ -82,8 +82,8 @@ html {
   justify-content: space-between;
   font-family: Plain;
   font-size: 1.25em;
+  z-index: 100;
   padding: 0.5em 0;
-  /* background-color: red; */
 }
 
 .logo {
@@ -147,7 +147,28 @@ html {
   -webkit-text-decoration-color: #ce1126;
   text-decoration-color: #ce1126;
 }
-
+.side-menu {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+  z-index: 100;
+  position: fixed;
+  left: -50px;
+  font-family: Plain;
+  font-size: 1.25em;
+}
+.side-menu_list {
+  display: flex;
+}
+.side-menu_item:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 1px;
+}
+.side-menu_link + .side-menu_link {
+  margin-left: 2em;
+}
 .hero {
   margin-top: 2.5em;
   font-family: Roobert;
@@ -398,6 +419,31 @@ button {
   max-height: 500px;
 }
 
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  position: sticky;
+  font-family: Plain;
+  background-color: #002b7f;
+  color: white;
+  padding: 1em 0;
+}
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_right {
+  display: flex;
+}
+.footer_right > a + a {
+  margin-left: 2em;
+}
+.footer_right > a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 1px;
+}
+
 /* media queries */
 @media only screen and (min-width: 2000px) {
   .container {
@@ -418,6 +464,10 @@ button {
     width: 350px;
     height: 350px;
     top: -100px;
+  }
+
+  .side-menu {
+    left: 300px;
   }
 
   .hero_right {
@@ -492,6 +542,9 @@ button {
 }
 
 @media only screen and (max-width: 1250px) {
+  .side-menu {
+    display: none;
+  }
   .container {
     width: 80%;
   }
@@ -644,36 +697,4 @@ button {
     left: 185px;
     top: 95px;
   }
-}
-
-/* toggle class */
-
-.dark-mode {
-  background-color: #ebdcbd;
-  color: #000000;
-}
-
-footer {
-  display: flex;
-  justify-content: space-evenly;
-  position: sticky;
-  font-family: Plain;
-  background-color: #002b7f;
-  color: white;
-  padding: 1em 0;
-}
-.footer_wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-.footer_right {
-  display: flex;
-}
-.footer_right > a + a {
-  margin-left: 2em;
-}
-.footer_right > a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 1px;
 }
