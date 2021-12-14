@@ -134,8 +134,8 @@ html {
 }
 
 .work-nav:hover {
-  -webkit-text-decoration-color: #002b7f;
-  text-decoration-color: #002b7f;
+  -webkit-text-decoration-color: #ce1126;
+  text-decoration-color: #ce1126;
 }
 
 .about-nav:hover {
@@ -143,10 +143,6 @@ html {
   text-decoration-color: #fcd117;
 }
 
-.contact-nav:hover {
-  -webkit-text-decoration-color: #ce1126;
-  text-decoration-color: #ce1126;
-}
 .side-menu {
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
@@ -398,7 +394,7 @@ button {
 }
 
 .about_left-body > span + span {
-  margin-top: 2em;
+  margin-top: 1em;
   display: block;
 }
 .contact {
@@ -427,6 +423,7 @@ footer {
   background-color: #002b7f;
   color: white;
   padding: 1em 0;
+  margin-top: 2em;
 }
 .footer_wrapper {
   display: flex;
@@ -442,6 +439,10 @@ footer {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 1px;
+}
+
+.footer_left {
+  font-size: em;
 }
 
 /* media queries */
