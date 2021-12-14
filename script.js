@@ -8,21 +8,19 @@ window.onload = function() {
   timeline.from("#abstract-shapes", 1.5, {opacity:0, ease: Power3.easeOut},0)
 }
 }
-// var tl = new TimelineMax({onUpdate:updatePercentage});
-// var tl2 = new TimelineMax();
-// const controller = new ScrollMagic.Controller();
+var tl = new TimelineMax({onUpdate:updatePercentage});
+var tl2 = new TimelineMax();
+const controller = new ScrollMagic.Controller();
 
-// tl.from("#work-wrapper_right-1", 1, {x:200, opacity: 0})
-// tl2.from("#work-wrapper_right-2", 1, {x:200, opacity: 0})
+tl.from("#side-menu", 0.5, {x:-50, opacity: 0, ease: Power1.easeOut})
 
-// const scene = new ScrollMagic.Scene({
-//   triggerElement: ".work",
-//   triggerHook: "onLeave",
-//   duration: "100%"
-// })
-//   .setPin(".work")
-//   .setTween(tl)
-//     .addTo(controller);
+const scene = new ScrollMagic.Scene({
+  triggerElement: ".hero",
+  triggerHook: "onLeave",
+  duration: "10%",
+})
+  .setTween(tl)
+    .addTo(controller);
 
 
 // const scene2 = new ScrollMagic.Scene({
@@ -34,6 +32,6 @@ window.onload = function() {
 //     .addTo(controller);
 
 
-// function updatePercentage() {
-//   tl.progress();
-// }
+function updatePercentage() {
+  tl.progress();
+}
