@@ -194,10 +194,16 @@ button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1.25em;
+  font-size: 1.25rem;
   font-weight: 900;
+  /* font-family: Plain; */
+  transition: border 0.1s;
 }
 
+button:hover {
+  border: 2px solid white;
+  cursor: pointer;
+}
 
 .yellow {
   background-color: #fcd117;
@@ -212,14 +218,6 @@ button {
   border: #002b7f 2px solid;
 }
 
-.button {
-  transition: border 0.1s;
-}
-
-.button:hover {
-  border: 2px solid white;
-  cursor: pointer;
-}
 
 #span-designer::before {
   content: "";
