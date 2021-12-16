@@ -198,14 +198,18 @@ button {
   font-weight: 900;
 }
 
-.blue {
-  background-color: #002b7f;
-  border: #002b7f 2px solid;
-}
 
+.yellow {
+  background-color: #fcd117;
+  border: #fcd117 2px solid;
+}
 .red {
   background-color: #ce1126;
   border: #ce1126 2px solid;
+}
+.blue {
+  background-color: #002b7f;
+  border: #002b7f 2px solid;
 }
 
 .button {
