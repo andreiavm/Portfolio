@@ -218,7 +218,6 @@ button:hover {
   border: #002b7f 2px solid;
 }
 
-
 #span-designer::before {
   content: "";
   background-image: url(/graphics/red-square.png);
@@ -418,12 +417,13 @@ button:hover {
 }
 
 .site-link {
-  color: #fcd117;
   display: inline;
+  text-decoration: underline;
 }
 
 .site-link:hover {
   text-decoration: underline;
+  color: #fcd117;
 }
 
 .about {
