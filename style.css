@@ -259,6 +259,7 @@ button:hover {
 
 .my-name:hover {
   cursor: pointer;
+  color: #fcd117;
 }
 
 .my-name:hover:before {
