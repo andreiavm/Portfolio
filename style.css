@@ -423,6 +423,11 @@ button:hover {
   width: 1000px;
 }
 
+.xdassignment_wrapper {
+  max-width: 50ch;
+  margin-top: 2em;
+}
+
 .video_wrapper {
   display: flex;
   justify-content: center;
@@ -629,6 +634,12 @@ footer {
   }
 }
 @media only screen and (max-width: 600px) {
+  .video_wrapper {
+    overflow: hidden;
+  }
+  .video {
+    width: 400px;
+  }
   .header {
     font-size: 1em;
   }
@@ -695,6 +706,9 @@ footer {
 }
 
 @media only screen and (max-width: 1250px) {
+  .video {
+    width: 800px;
+  }
   button {
     display: none;
   }
