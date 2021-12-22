@@ -316,7 +316,7 @@ button:hover {
 
 .my-name::before {
   content: "";
-  background-image: url(/graphics/boss.jpg);
+  background-image: url(/graphics/christmas-me.jpg);
   background-size: cover;
   z-index: 2;
   background-repeat: no-repeat;
@@ -373,6 +373,21 @@ button:hover {
 .mind-map_left {
   margin-top: 1em;
 }
+
+.project-select_wrapper {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-select {
+  text-decoration: underline;
+}
+
+.project-select:hover {
+  color: #fcd117;
+  cursor: pointer;
+}
 .work_image {
   transition: transform 0.3s;
 }
@@ -404,7 +419,15 @@ button:hover {
   flex-direction: column;
   width: 50%;
 }
+.video {
+  width: 1000px;
+}
 
+.video_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
 .work-wrapper_header {
   font-size: 2em;
 }
@@ -439,6 +462,20 @@ button:hover {
   font-size: 1.15em;
 }
 
+.about_left-link > h2 {
+  display: inline;
+}
+
+.about_left-link {
+  text-decoration: underline;
+  font-size: 1em;
+}
+
+.about_left-link:hover {
+  color: #fcd117;
+  cursor: pointer;
+}
+
 .about_right {
   width: 40%;
 }
@@ -452,19 +489,16 @@ button:hover {
   display: flex;
   justify-content: space-between;
 }
+.about_left-body {
+  margin-bottom: 1em;
+}
 
+.about_left-link {
+  font-size: 0.85em;
+}
 .about_left-body > span + span {
   margin-top: 1em;
   display: block;
-}
-.contact {
-  font-family: Roobert;
-  margin-top: 6em;
-}
-
-.contact h1 {
-  font-size: 3em;
-  margin-bottom: 0.25em;
 }
 
 .work-wrapper > img {
@@ -474,11 +508,36 @@ button:hover {
 .about_right-image {
   max-height: 500px;
 }
+.aboutpage-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
 
+.aboutpage-wrapper + .aboutpage-wrapper {
+  margin-top: 3em;
+}
+
+.aboutpage-left {
+  max-width: 50ch;
+  font-size: 1.25em;
+}
+.aboutpage-left > p > span {
+  display: block;
+}
+
+.aboutpage-left > p > span + span {
+  margin-top: 0.75em;
+}
+.aboutpage-right {
+  width: 30%;
+}
+
+.aboutpage-left > h2 + h2 {
+  margin-top: 1em;
+}
 footer {
   display: flex;
   justify-content: space-evenly;
-  position: sticky;
   font-family: Plain;
   background-color: #002b7f;
   color: white;
@@ -505,8 +564,35 @@ footer {
   font-size: em;
 }
 
+.busteni {
+  text-decoration: underline;
+}
+.busteni:hover {
+  color: #ce1126;
+  cursor: pointer;
+}
+.busteni:hover::before {
+  display: block;
+  cursor: pointer;
+}
+.busteni::before {
+  content: "";
+  background-image: url(/graphics/busteni.jpg);
+  background-size: cover;
+  z-index: 2;
+  background-repeat: no-repeat;
+  display: none;
+  position: absolute;
+  top: 275px;
+  width: 400px;
+  height: 313px;
+}
+
 /* media queries */
 @media only screen and (min-width: 2000px) {
+  .video {
+    width: 1300px;
+  }
   .project_body::after {
     left: 1150px;
   }
@@ -642,6 +728,10 @@ footer {
 }
 
 @media only screen and (max-width: 900px) {
+  .project_body::after {
+    left: 1000px;
+  }
+
   .footer_wrapper {
     display: flex;
     flex-direction: column;
@@ -744,6 +834,12 @@ footer {
 }
 
 @media only screen and (max-width: 536px) {
+  .project_body::after {
+    left: 230px;
+    top: 120px;
+    width: 60px;
+    height: 60px;
+  }
   #span-designer::before {
     width: 70px;
     height: 70px;
@@ -783,5 +879,49 @@ footer {
 @media only screen and (max-width: 1400px) {
   button {
     font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .project_body::after {
+    left: 750px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .project_body::after {
+    left: 675px;
+    width: 75px;
+    height: 75px;
+    top: -10px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .mind-map_right {
+    width: 100%;
+  }
+
+  .project_body::after {
+    left: 640px;
+    top: -10px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .project_body::after {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1150px) and (max-width: 1250px) {
+  .project_body::after {
+    left: 800px;
+  }
+}
+
+@media only screen and (min-width: 1800px) and (max-width: 2300px) {
+  .project_body::after {
+    left: 1000px;
   }
 }
