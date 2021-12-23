@@ -379,6 +379,27 @@ button:hover {
   margin-top: 1em;
   margin-bottom: 2em;
 }
+.visuals_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+.visuals-text_wrapper {
+  width: 40%;
+}
+
+.visuals-video {
+  width: 50%; 
+}
+.visuals-images_wrapper {
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.visuals-images_wrapper > img + img {
+  margin-top: 2em;
+}
 
 .moodboard-maynooth {
   width: 40%;
@@ -756,6 +777,17 @@ footer {
 }
 
 @media only screen and (max-width: 900px) {
+  .visuals_wrapper {
+    flex-direction: column;
+  }
+
+  .visuals-video {
+    width: 100%;
+  }
+
+  .visuals-text_wrapper {
+    width: 100%;
+  }
   .moodboard_wrapper {
     flex-direction: column;
   }
