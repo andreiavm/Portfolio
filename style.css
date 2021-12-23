@@ -373,7 +373,20 @@ button:hover {
 .mind-map_left {
   margin-top: 1em;
 }
+.moodboard_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
 
+.moodboard-maynooth {
+  width: 40%;
+}
+
+.moodboard_text {
+  width: 50%;
+}
 .project-select_wrapper {
   margin-top: 1em;
   display: flex;
@@ -743,6 +756,17 @@ footer {
 }
 
 @media only screen and (max-width: 900px) {
+  .moodboard_wrapper {
+    flex-direction: column;
+  }
+
+  .moodboard-maynooth {
+    width: 100%;
+  }
+
+  .moodboard_text {
+    width: 70%;
+  }
   .project_body::after {
     left: 1000px;
   }
