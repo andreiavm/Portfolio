@@ -550,10 +550,6 @@ button:hover {
 .work-wrapper > img {
   max-height: 500px;
 }
-
-.about_right-image {
-  max-height: 500px;
-}
 .aboutpage-wrapper {
   display: flex;
   justify-content: space-between;
