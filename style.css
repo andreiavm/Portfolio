@@ -622,7 +622,7 @@ button:hover {
   width: 70px;
   position: relative;
   top: -10px;
-  margin-left:0.5em;
+  margin-left: 0.5em;
   transform: rotate(180deg);
 }
 
@@ -630,10 +630,8 @@ button:hover {
   width: 60px;
   position: relative;
   top: -10px;
-  left: -50px;
+  left: -25px;
   z-index: -1;
-  margin-left: 1em;
-
 }
 .about_left {
   font-family: Roobert;
