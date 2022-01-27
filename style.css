@@ -190,11 +190,12 @@ button {
   align-self: flex-start;
   border: none;
   color: white;
-  padding: 0.9rem 1.5rem;
+  /* font-size: 1.25em; */
+  padding: 0.9em 1.5em;
+  font-size: 1em;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1.25rem;
   font-weight: 900;
   transition: transform 0.2s;
   -webkit-box-shadow: 0px 6px 9px -2px rgba(7, 7, 7, 0.76);
@@ -203,8 +204,6 @@ button {
 
 button:hover {
   cursor: pointer;
-  /* transform: scale(1.02); */
-  /* transform: translateY(-5%); */
 }
 
 .red {
@@ -320,7 +319,7 @@ button:hover {
 
 .my-name::before {
   content: "";
-  background-image: url(/graphics/christmas-me.jpg);
+  background-image: url(/graphics/me-1.jpg);
   background-size: cover;
   z-index: 2;
   background-repeat: no-repeat;
@@ -342,6 +341,94 @@ button:hover {
 }
 .project-title {
   font-size: 3em;
+}
+
+.project-description_wrapper {
+  font-size: 1.15em;
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-description_left {
+  width: 45%;
+}
+.project-description_left > p + p {
+  margin-top: 0.6em;
+}
+.project-description_right {
+  width: 45%;
+}
+
+.project-description_right > p + p {
+  margin-top: 0.6em;
+}
+.affinity-diagram_wrapper {
+  margin-top: 2em;
+  font-size: 1.15em;
+  margin-bottom: 1em;
+}
+
+.affinity-diagram_wrapper > img {
+  width: 100%;
+  margin-top: 0.5em;
+}
+
+.affinity-diagram_wrapper > p {
+  width: 60ch;
+  margin-bottom: 0.25em;
+}
+
+.user-persona_wrapper {
+  font-size: 1.15em;
+}
+.user-persona_wrapper > img {
+  margin-top: 0.5em;
+}
+.user-persona_wrapper > p {
+  width: 60ch;
+  margin-bottom: 0.25em;
+}
+.ideation-img {
+  margin-top: 1em;
+}
+
+.prototype_wrapper {
+  font-size: 1.15em;
+  margin-top: 1em;
+}
+
+.prototype_wrapper > h2 {
+  margin-bottom: 0.25em;
+}
+.prototype-content_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.prototype_paragraphs {
+  width: 45%;
+}
+
+.prototype_paragraphs > p + p {
+  margin-top: 1em;
+}
+.prototype-content_wrapper > p {
+  width: 45%;
+}
+.prototype-content_wrapper > img {
+  width: 45%;
+}
+
+.prototype_wrapper > p {
+  width: 45%;
+}
+.style-guide_wrapper {
+  margin-top: 1em;
+}
+
+.style-guide_left {
+  width: 50%;
+  margin-bottom: 0.5em;
 }
 
 .project_body::after {
@@ -380,7 +467,7 @@ button:hover {
 .moodboard_wrapper {
   display: flex;
   justify-content: space-between;
-  margin-top: 1em;
+  margin-top: 2em;
   margin-bottom: 2em;
 }
 .visuals_wrapper {
@@ -389,11 +476,14 @@ button:hover {
   margin-top: 2em;
 }
 .visuals-text_wrapper {
-  width: 40%;
+  width: 45%;
+  margin-bottom: 1em;
 }
-
+.visuals-text_wrapper p + p {
+  margin-top: 0.7em;
+}
 .visuals-video {
-  width: 50%;
+  width: 45%;
 }
 .visuals-images_wrapper {
   margin-top: 2em;
@@ -406,11 +496,17 @@ button:hover {
 }
 
 .moodboard-maynooth {
-  width: 40%;
+  width: 45%;
 }
 
 .moodboard_text {
-  width: 50%;
+  width: 45%;
+}
+.bespoke-screens {
+  margin-top: 2em;
+}
+.moodboard_text > p + p {
+  margin-top: 1em;
 }
 .project-select_wrapper {
   margin-top: 1em;
@@ -420,6 +516,16 @@ button:hover {
 
 .project-select {
   text-decoration: underline;
+  margin: 0 0.25em;
+}
+
+.project_wrapper {
+  font-size: 1.15em;
+  margin-top: 2em;
+}
+
+.project_wrapper > img + img {
+  margin-top: 2em;
 }
 
 .project-select:hover {
@@ -441,10 +547,6 @@ button:hover {
   margin-bottom: 0.25em;
 }
 
-.portfolio-wrapper {
-  display: grid;
-}
-
 .work-wrapper {
   display: flex;
   justify-content: space-between;
@@ -464,11 +566,16 @@ button:hover {
 }
 
 .xdassignment_wrapper {
-  max-width: 50ch;
+  width: 45%;
   margin-top: 2em;
   font-size: 1.2em;
 }
-
+.xdassignment_wrapper > p + p {
+  margin-top: 0.75em;
+}
+.xd-screens {
+  margin-top: 2em;
+}
 .video_wrapper {
   display: flex;
   justify-content: center;
@@ -523,7 +630,7 @@ button:hover {
 }
 
 .about_right {
-  width: 40%;
+  width: 35%;
 }
 
 .about h1 {
@@ -535,6 +642,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
 }
+
 .about_left-body {
   margin-bottom: 1em;
 }
@@ -550,32 +658,31 @@ button:hover {
 .work-wrapper > img {
   max-height: 500px;
 }
-.aboutpage-wrapper {
+.aboutpage_wrapper {
   display: flex;
   justify-content: space-between;
 }
 
-.aboutpage-wrapper + .aboutpage-wrapper {
+.aboutpage_wrapper + .aboutpage_wrapper {
   margin-top: 3em;
 }
 
-.aboutpage-left {
-  max-width: 50ch;
+.aboutpage_left {
+  width: 45%;
   font-size: 1.25em;
 }
-.aboutpage-left > p > span {
+.aboutpage_left > p > span {
   display: block;
 }
 
-.aboutpage-left > p > span + span {
+.aboutpage_left > p > span + span {
   margin-top: 0.75em;
 }
-.aboutpage-right {
-  width: 30%;
+.aboutpage_right {
+  width: 45%;
 }
-
-.aboutpage-left > h2 + h2 {
-  margin-top: 1em;
+.profile-pic {
+  position: relative;
 }
 footer {
   display: flex;
@@ -625,18 +732,24 @@ footer {
   background-repeat: no-repeat;
   display: none;
   position: absolute;
-  top: 275px;
+  top: 90px;
   width: 400px;
   height: 313px;
 }
 
-/* media queries */
+/* media queries for responsive design */
 @media only screen and (min-width: 2000px) {
   .video {
     width: 1300px;
   }
   .project_body::after {
     left: 1150px;
+  }
+  button {
+    font-size: 1.05em;
+  }
+  .project-description_wrapper {
+    font-size: 1.25em;
   }
   .container {
     width: 55%;
@@ -655,7 +768,7 @@ footer {
   .my-name::before {
     width: 350px;
     height: 350px;
-    top: -100px;
+    top: -80px;
   }
 
   .side-menu {
@@ -683,6 +796,7 @@ footer {
   .container {
     width: 90%;
   }
+
   .navigation {
     display: none;
   }
@@ -711,7 +825,13 @@ footer {
     -webkit-transform: translate(0%, 5%);
     transform: translate(-10%, 5%);
   }
+  .moodboard_text {
+    width: 100%;
+  }
 
+  .moodboard_wrapper {
+    width: 100%;
+  }
   #span-designer::before {
     width: 60px;
     height: 60px;
@@ -746,16 +866,12 @@ footer {
   .video {
     width: 800px;
   }
-  button {
-    display: none;
-  }
   .side-menu {
     display: none;
   }
   .container {
     width: 80%;
   }
-
   .yellow-rect {
     transform: translate(72%, -700%);
   }
@@ -782,8 +898,14 @@ footer {
   .visuals_wrapper {
     flex-direction: column;
   }
-
+  button {
+    display: none;
+  }
   .visuals-video {
+    width: 100%;
+  }
+
+  .xdassignment_wrapper {
     width: 100%;
   }
 
@@ -793,14 +915,13 @@ footer {
   .moodboard_wrapper {
     flex-direction: column;
   }
-
+  .moodboard_text {
+    margin-top: 1em;
+  }
   .moodboard-maynooth {
     width: 100%;
   }
 
-  .moodboard_text {
-    width: 70%;
-  }
   .project_body::after {
     left: 1000px;
   }
@@ -839,6 +960,64 @@ footer {
     margin-top: 0.75em;
   }
 
+  .project_wrapper {
+    flex-direction: column;
+  }
+  .project-description_wrapper {
+    flex-direction: column;
+  }
+
+  .project-description_right,
+  .project-description_left {
+    margin-top: 1em;
+    width: 100%;
+  }
+
+  .affinity-diagram_wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .affinity-diagram_wrapper > p {
+    width: 100%;
+  }
+
+  .user-persona_wrapper {
+    flex-direction: column;
+  }
+
+  .user-persona_wrapper > p {
+    width: 100%;
+  }
+
+  .prototype_wrapper {
+    flex-direction: column;
+  }
+
+  .prototype_wrapper > p {
+    width: 100%;
+    margin-top: 2em;
+  }
+  .prototype-content_wrapper {
+    flex-direction: column;
+  }
+
+  .prototype-content_wrapper > img {
+    width: 100%;
+  }
+
+  .prototype_paragraphs {
+    margin-top: 1em;
+    width: 100%;
+  }
+
+  .style-guide_wrapper {
+    flex-direction: column;
+  }
+
+  .style-guide_left {
+    width: 100%;
+  }
   #span-designer::before {
     width: 80px;
     height: 80px;
@@ -904,7 +1083,20 @@ footer {
     min-width: 100%;
     margin-top: -1em;
   }
+
+  .aboutpage_wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .aboutpage_left,
+  .aboutpage_right {
+    margin-top: 2em;
+    width: 100%;
+  }
 }
+
+/* media queries for shape positions */
 
 @media only screen and (max-width: 536px) {
   .project_body::after {
@@ -946,12 +1138,13 @@ footer {
     height: 80px;
     left: 185px;
     top: 95px;
+    display: none;
   }
 }
 
 @media only screen and (max-width: 1400px) {
   button {
-    font-size: 1em;
+    font-size: 0.85em;
   }
 }
 
@@ -996,5 +1189,12 @@ footer {
 @media only screen and (min-width: 1800px) and (max-width: 2300px) {
   .project_body::after {
     left: 1000px;
+  }
+}
+
+@media only screen and (min-width: 1232px) and (max-width: 1250px) {
+  #span-digital-artisan::after {
+    left: 400px;
+    top: 10px;
   }
 }
