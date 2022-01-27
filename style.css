@@ -607,12 +607,12 @@ button:hover {
   font-family: Roobert;
   margin-top: 6em;
 }
-.about-header {
+#about-header {
   display: flex;
   align-items: flex-end;
 }
 
-.work-header {
+#work-header {
   display: flex;
   align-items: flex-end;
   margin-bottom: 0.5em;
