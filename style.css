@@ -619,9 +619,10 @@ button:hover {
 }
 
 .yellow-triangle {
-  width: 70px;
+  width: 60px;
   position: relative;
-  top: -10px;
+  top: -15px;
+  left: 10px;
   margin-left: 0.5em;
   transform: rotate(180deg);
 }
@@ -689,7 +690,7 @@ button:hover {
 }
 
 .aboutpage_wrapper + .aboutpage_wrapper {
-  margin-top: 3em;
+  margin-top: 2em;
 }
 
 .aboutpage_left {
@@ -1111,6 +1112,10 @@ footer {
   .aboutpage_wrapper {
     flex-direction: column;
     width: 100%;
+  }
+
+  .aboutpage_wrapper + .aboutpage_wrapper {
+    margin-top: 0em;
   }
 
   .aboutpage_left,
