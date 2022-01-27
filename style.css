@@ -607,7 +607,34 @@ button:hover {
   font-family: Roobert;
   margin-top: 6em;
 }
+.about-header {
+  display: flex;
+  align-items: flex-end;
+}
 
+.work-header {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 0.5em;
+}
+
+.yellow-triangle {
+  width: 70px;
+  position: relative;
+  top: -10px;
+  margin-left:0.5em;
+  transform: rotate(180deg);
+}
+
+.red-square {
+  width: 60px;
+  position: relative;
+  top: -10px;
+  left: -50px;
+  z-index: -1;
+  margin-left: 1em;
+
+}
 .about_left {
   font-family: Roobert;
   max-width: 55ch;
@@ -908,7 +935,6 @@ footer {
   .xdassignment_wrapper {
     width: 100%;
   }
-
   .visuals-text_wrapper {
     width: 100%;
   }
