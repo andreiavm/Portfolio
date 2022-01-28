@@ -261,8 +261,8 @@ button:hover {
 }
 
 .my-name:hover {
+  color: #ce1126;
   cursor: pointer;
-  color: #fcd117;
 }
 
 .my-name:hover:before {
@@ -282,6 +282,12 @@ button:hover {
   width: 80%;
   height: 100%;
 }
+
+.hero_left > a {
+  font-size: 1.25em;
+  align-self: flex-start;
+}
+
 .hero_right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -643,13 +649,33 @@ button:hover {
 
 .about_left-link > h2 {
   display: inline;
+  font-size: 1.5rem;
 }
 
 .about_left-link {
   text-decoration: underline;
   font-size: 1em;
 }
+.get-in-touch {
+  display: inline-block;
+  margin-top: 0.75em;
+  text-decoration: underline;
+  font-size: 1.25em;
+}
+.hero-cta {
+  margin-top: 0.75em;
+  text-decoration: underline;
+  font-size: 1.25em;
+}
 
+.hero-cta:hover {
+  color: #fcd117;
+  cursor: pointer;
+}
+.get-in-touch:hover {
+  color: #fcd117;
+  cursor: pointer;
+}
 .about_left-link:hover {
   color: #fcd117;
   cursor: pointer;
@@ -663,10 +689,20 @@ button:hover {
   font-size: 3em;
   margin-bottom: 0.25em;
 }
-
+.aboutheader_wrapper {
+  display: flex;
+}
 .about-wrapper {
   display: flex;
   justify-content: space-between;
+}
+.about-red-square {
+  transform: rotate(180deg);
+  width: 60px;
+  position: relative;
+  top: -10px;
+  right: 210px;
+  z-index: -1;
 }
 
 .about_left-body {
@@ -704,9 +740,19 @@ button:hover {
 .aboutpage_left > p > span + span {
   margin-top: 0.75em;
 }
+.about-headerwrapper {
+  display: flex;
+  align-items: baseline;
+}
+
+.about-blue-triangle {
+  margin-left: 1.5em;
+  width: 70px;
+}
 .aboutpage_right {
   width: 45%;
 }
+
 .profile-pic {
   position: relative;
 }
@@ -748,7 +794,6 @@ footer {
 }
 .busteni:hover::before {
   display: block;
-  cursor: pointer;
 }
 .busteni::before {
   content: "";
@@ -758,7 +803,59 @@ footer {
   background-repeat: no-repeat;
   display: none;
   position: absolute;
-  top: 90px;
+  top: 110px;
+  width: 400px;
+  height: 313px;
+}
+
+.bucharest {
+  text-decoration: underline;
+}
+
+.bucharest:hover {
+  color: #ce1126;
+  cursor: pointer;
+}
+
+.bucharest:hover::before {
+  display: block;
+}
+.bucharest::before {
+  content: "";
+  background-image: url(/graphics/bucharest.jpg);
+  background-size: cover;
+  z-index: 2;
+  background-repeat: no-repeat;
+  display: none;
+  position: absolute;
+  top: 175px;
+  left: 250px;
+  width: 400px;
+  height: 313px;
+}
+
+.university {
+  text-decoration: underline;
+}
+
+.university:hover {
+  color: #ce1126;
+  cursor: pointer;
+}
+.university:hover::before {
+  display: block;
+}
+
+.university::before {
+  content: "";
+  background-image: url(/graphics/uni.jpg);
+  background-size: cover;
+  z-index: 2;
+  background-repeat: no-repeat;
+  display: none;
+  position: absolute;
+  top: 295px;
+  left: 250px;
   width: 400px;
   height: 313px;
 }
@@ -796,7 +893,14 @@ footer {
     height: 350px;
     top: -80px;
   }
+  .bucharest::before {
+    left: 750px;
+  }
 
+  .university::before {
+    top: 585px;
+    left: 450px;
+  }
   .side-menu {
     left: 300px;
     top: 500px;
@@ -805,8 +909,11 @@ footer {
     margin-top: 4em;
     margin-right: 1em;
   }
-  .footer {
+  .footer-about {
     margin-top: 4em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -889,6 +996,28 @@ footer {
 }
 
 @media only screen and (max-width: 1250px) {
+  .busteni:hover::before,
+  .my-name:hover::before,
+  .bucharest:hover::before,
+  .university:hover::before {
+    display: none;
+  }
+
+  .busteni,
+  .my-name,
+  .bucharest,
+  .university {
+    text-decoration: none;
+  }
+
+  .busteni:hover,
+  .my-name:hover,
+  .bucharest:hover,
+  .university:hover {
+    cursor: inherit;
+    color: inherit;
+  }
+
   .video {
     width: 800px;
   }
