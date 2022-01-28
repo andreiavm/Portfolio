@@ -748,7 +748,7 @@ button:hover {
 
 .about-blue-triangle {
   margin-left: -1.5em;
-  z-index:-1;
+  z-index: -1;
   width: 70px;
   align-self: end;
 }
@@ -901,7 +901,7 @@ footer {
   }
 
   .university::before {
-    top: 585px;
+    top: 595px;
     left: 450px;
   }
   .side-menu {
