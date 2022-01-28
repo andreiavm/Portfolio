@@ -750,7 +750,8 @@ button:hover {
   margin-left: -1.5em;
   z-index: -1;
   width: 70px;
-  align-self: end;
+  position: relative;
+  top: 15px;
 }
 .aboutpage_right {
   width: 45%;
