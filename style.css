@@ -252,21 +252,7 @@ button:hover {
 }
 
 .hero_body {
-  max-width: 40ch;
   font-size: 1.5em;
-}
-
-.my-name {
-  text-decoration: underline;
-}
-
-.my-name:hover {
-  color: #ce1126;
-  cursor: pointer;
-}
-
-.my-name:hover:before {
-  display: block;
 }
 
 .hero_left {
@@ -539,15 +525,17 @@ button:hover {
   cursor: pointer;
 }
 .work_image {
+  width: 75%;
   transition: transform 0.3s;
   -webkit-box-shadow: 0px 6px 9px -2px rgba(7, 7, 7, 0.76);
   box-shadow: 0px 6px 9px -2px rgba(7, 7, 7, 0.76);
 }
 
-.work_image:hover {
+/* .work_image:hover {
   transform: scale(1.025);
   cursor: pointer;
-}
+} */
+
 .work h1 {
   font-size: 3em;
   margin-bottom: 0.25em;
@@ -559,7 +547,7 @@ button:hover {
 }
 
 .work-wrapper_left {
-  width: 40%;
+  width: 50%;
 }
 
 .work-wrapper_right {
@@ -591,8 +579,17 @@ button:hover {
   font-size: 2em;
 }
 .work-wrapper_body {
-  font-size: 1.15em;
+  font-size: 1.25rem;
   margin-top: 0.75em;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+}
+
+.work-wrapper_body>span+span {
+  margin-top: 1em;
+  display: block;
 }
 
 .work-wrapper + .work-wrapper {
@@ -628,7 +625,7 @@ button:hover {
   width: 60px;
   position: relative;
   top: -15px;
-  left: 10px;
+  left: -5px;
   margin-left: 0.5em;
   transform: rotate(180deg);
 }
@@ -648,24 +645,23 @@ button:hover {
 }
 
 .about_left-link > h2 {
+  font-size: 1.25rem;
   display: inline;
-  font-size: 1.5rem;
 }
 
 .about_left-link {
   text-decoration: underline;
-  font-size: 1em;
 }
 .get-in-touch {
   display: inline-block;
   margin-top: 0.75em;
   text-decoration: underline;
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 .hero-cta {
   margin-top: 0.75em;
   text-decoration: underline;
-  font-size: 1.25em;
+  font-size: 1.5rem;
 }
 
 .hero-cta:hover {
@@ -706,11 +702,8 @@ button:hover {
 }
 
 .about_left-body {
+  font-size: 1.25rem;
   margin-bottom: 1em;
-}
-
-.about_left-link {
-  font-size: 0.85em;
 }
 .about_left-body > span + span {
   margin-top: 1em;
@@ -951,7 +944,7 @@ footer {
     font-size: 2.5em;
   }
   .hero_body {
-    font-size: 2.5em;
+    font-size: 2.5  em;
     line-height: 1.3em;
   }
   .logo {
@@ -988,10 +981,6 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
-  }
-
-  .work-wrapper_body {
-    display: none;
   }
 
   .about {
@@ -1037,6 +1026,7 @@ footer {
 
   .main-title {
     font-size: 4.5em;
+
   }
   #span-designer::before {
     width: 70px;
@@ -1051,15 +1041,22 @@ footer {
     left: 170px;
     top: 100px;
   }
+
+  .about_left-link {
+    display: none;
+  }
+
 }
 
 @media only screen and (max-width: 900px) {
+
   .visuals_wrapper {
     flex-direction: column;
   }
   button {
     display: none;
   }
+ 
   .visuals-video {
     width: 100%;
   }
@@ -1102,6 +1099,10 @@ footer {
     font-size: 1em;
   }
 
+  .work_image {
+    width: 100%;
+    margin-bottom: 1em;
+  }
   .work-wrapper_left {
     min-width: 100%;
   }
@@ -1114,8 +1115,12 @@ footer {
   }
 
   .hero_body {
-    font-size: 2em;
-    margin-top: 0.75em;
+    font-size: 1.75em;
+    margin-top: 0.25em;
+  }
+
+  .hero-cta {
+    font-size: 1.40em;
   }
 
   .project_wrapper {
@@ -1211,7 +1216,11 @@ footer {
   }
 
   .work-wrapper_body {
-    display: none;
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.75rem;
   }
 
   .work-wrapper_header {
@@ -1225,13 +1234,15 @@ footer {
     width: 100%;
   }
   .about_left-body {
-    font-size: 1.25em;
+    font-size: 1.75rem;
   }
 
   .about_left-body > span + span {
     margin-top: 1.5em;
   }
-
+  .about_left-link >h2 {
+    font-size: 1.75rem;
+  }
   .about_right {
     width: 100%;
     margin-top: 5em;
