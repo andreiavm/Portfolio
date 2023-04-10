@@ -332,7 +332,7 @@ button:hover {
 
 .work {
   font-family: Roobert;
-  margin-top: 6em;
+  margin-top: 4em;
 }
 
 .project {
@@ -616,7 +616,7 @@ button:hover {
 
 .about {
   font-family: Roobert;
-  margin-top: 6em;
+  margin-top: 4em;
 }
 #about-header {
   display: flex;
@@ -649,11 +649,10 @@ button:hover {
   font-family: Roobert;
   max-width: 55ch;
   width: 50%;
-  font-size: 1.15em;
 }
 
 .about_left-link > h2 {
-  font-size: 1.25rem;
+  font-size: 1.50rem;
   display: inline;
 }
 
@@ -696,6 +695,7 @@ button:hover {
 .aboutheader_wrapper {
   display: flex;
 }
+
 .about-wrapper {
   display: flex;
   justify-content: space-between;
@@ -710,7 +710,7 @@ button:hover {
 }
 
 .about_left-body {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin-bottom: 1em;
 }
 .about_left-body > span + span {
@@ -720,6 +720,11 @@ button:hover {
 
 .work-wrapper > img {
   max-height: 500px;
+}
+
+.about-about {
+  font-family: Roobert;
+  margin-top: 1em;
 }
 .aboutpage_wrapper {
   display: flex;
@@ -731,20 +736,25 @@ button:hover {
 }
 
 .aboutpage_left {
-  width: 45%;
-  font-size: 1.25em;
+  width: 55%;
+  font-size: 1.25rem;
 }
 .aboutpage_left > p > span {
   display: block;
 }
 
 .aboutpage_left > p > span + span {
-  margin-top: 0.75em;
+  margin-top: 1em;
+  
 }
 .about-headerwrapper {
   display: flex;
   align-items: baseline;
   margin-bottom: 0.5em;
+}
+.about-header-2 {
+  margin-top: 2em;
+  margin-bottom: 0.25em
 }
 
 .about-blue-triangle {
@@ -755,7 +765,8 @@ button:hover {
   top: 15px;
 }
 .aboutpage_right {
-  width: 45%;
+  width: 35%;
+  margin-top: 4em;
 }
 
 .profile-pic {
@@ -952,7 +963,7 @@ footer {
     font-size: 2.5em;
   }
   .hero_body {
-    font-size: 2.5  em;
+    font-size: 2.5em;
     line-height: 1.3em;
   }
   .logo {
@@ -991,9 +1002,6 @@ footer {
     width: 100%;
   }
 
-  .about {
-    margin-top: 3em;
-  }
 }
 
 @media only screen and (max-width: 1250px) {
@@ -1048,10 +1056,6 @@ footer {
     height: 80px;
     left: 170px;
     top: 100px;
-  }
-
-  .about_left-link {
-    display: none;
   }
 
 }
@@ -1207,6 +1211,11 @@ footer {
     margin-top: 3em;
   }
 
+  .about-about {
+    font-family: Roobert;
+    margin-top: -0.5em;
+  }
+
   .about-wrapper {
     flex-direction: column;
   }
@@ -1253,7 +1262,7 @@ footer {
   }
   .about_right {
     width: 100%;
-    margin-top: 5em;
+    margin-top: 3em;
   }
 
   .about_right-image {
