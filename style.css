@@ -779,6 +779,7 @@ footer {
   background-color: #002b7f;
   color: white;
   padding: 1em 0;
+    margin-top: auto;
   margin-top: 2em;
 }
 .footer_wrapper {
@@ -878,8 +879,7 @@ footer {
 
 /* media queries for responsive design */
 @media only screen and (min-width: 2000px) {
-  .html {
-    min-height: 100vh;
+  
   .video {
     width: 1300px;
   }
