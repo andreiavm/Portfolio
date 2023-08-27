@@ -878,6 +878,8 @@ footer {
 
 /* media queries for responsive design */
 @media only screen and (min-width: 2000px) {
+  .html {
+    min-height: 100vh;
   .video {
     width: 1300px;
   }
